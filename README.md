@@ -4,9 +4,6 @@ This repository is a complete, structured guide to Object-Oriented Programming (
 
 The goal of this repository is not just to teach syntax, but to build a strong object-oriented mindset, which is essential for writing scalable, maintainable, and real-world Python applications.
 <br>
-🚀 What This Repository Covers
-
-This repository explains core OOP principles step by step, starting from the basics and gradually moving toward advanced concepts.
 
 # 🔹 Core Concepts
 
@@ -73,3 +70,8 @@ This repository explains core OOP principles step by step, starting from the bas
 3. Developers preparing for backend, software engineering, or AI roles
 
 4. Anyone who wants to understand OOP beyond theory
+
+# 🤝 Contributions
+<br>
+Contributions, suggestions, and improvements are always welcome.
+Feel free to fork this repository and experiment.
