@@ -1,0 +1,125 @@
+# ======================================================
+# PYTHON OBJECT ORIENTED PROGRAMMING (OOP) – THEORY NOTES
+# ======================================================
+
+# Object Oriented Programming (OOP) is a programming paradigm
+# based on the concept of "objects".
+# An object represents a real-world entity and contains:
+# - Data (attributes)
+# - Behavior (methods)
+
+# Python is a fully object-oriented language because everything
+# in Python is an object, including integers, strings, lists,
+# functions, and even classes.
+
+# ------------------------------------------------------
+# 1. CLASS
+# ------------------------------------------------------
+# A class is a blueprint or template used to create objects.
+#
+# It defines:
+# - Properties (variables)
+# - Behaviors (functions)
+#
+# A class does not consume memory until an object is created.
+#
+# Key points:
+# - Class names follow PascalCase
+# - Variables inside a class are called attributes
+# - Functions inside a class are called methods
+
+# ------------------------------------------------------
+# 2. OBJECT
+# ------------------------------------------------------
+# An object is an instance of a class.
+#
+# When an object is created:
+# - Memory is allocated
+# - The constructor is executed automatically
+#
+# Multiple objects can be created from the same class,
+# each having its own separate data.
+
+# ------------------------------------------------------
+# 3. SELF KEYWORD
+# ------------------------------------------------------
+# `self` represents the current object.
+#
+# Purpose of self:
+# - Access instance variables and methods
+# - Differentiate instance variables from local variables
+#
+# Important notes:
+# - `self` is mandatory in instance methods
+# - Python passes it automatically
+
+# ------------------------------------------------------
+# 4. CONSTRUCTOR (__init__ METHOD)
+# ------------------------------------------------------
+# A constructor is a special method that executes
+# automatically when an object is created.
+#
+# Characteristics:
+# - Name is always __init__
+# - Used to initialize object data
+# - Executes once per object creation
+
+# ------------------------------------------------------
+# 5. INSTANCE VARIABLES
+# ------------------------------------------------------
+# Instance variables are variables specific to an object.
+#
+# Defined:
+# - Inside the constructor using self
+# - Or inside instance methods
+#
+# Each object has its own copy of instance variables.
+
+# ------------------------------------------------------
+# 6. CLASS VARIABLES
+# ------------------------------------------------------
+# Class variables are shared among all objects of a class.
+#
+# Defined:
+# - Inside the class but outside all methods
+#
+# If a class variable is modified, the change
+# reflects across all objects.
+
+# ------------------------------------------------------
+# 7. METHODS IN PYTHON
+# ------------------------------------------------------
+# There are three types of methods in Python:
+#
+# 1. Instance Methods
+#    - Work with instance variables
+#    - Use self
+#
+# 2. Class Methods
+#    - Work with class variables
+#    - Use cls
+#    - Declared using @classmethod
+#
+# 3. Static Methods
+#    - Do not use instance or class variables
+#    - Declared using @staticmethod
+
+# ------------------------------------------------------
+# 8. ENCAPSULATION
+# ------------------------------------------------------
+# Encapsulation means binding data and methods together
+# and restricting direct access to data.
+#
+# Python supports encapsulation using access modifiers:
+#
+# 1. Public Members
+#    - Accessible from anywhere
+#    - No underscore prefix
+#
+# 2. Protected Members
+#    - Accessible within class and subclasses
+#    - Single underscore (_variable)
+#
+# 3. Private Members
+#    - Accessible only inside the class
+#    - Double underscore (__variable)
