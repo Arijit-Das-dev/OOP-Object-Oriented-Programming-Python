@@ -1,7 +1,7 @@
 """
-Docstring for Encapsulation.Example2
+Docstring for Encapsulation.Example2 => Private
 """
-
+# Private method
 class BankAccount1:
 
     def __init__(self, acc_name, acc_num, password, balance):
