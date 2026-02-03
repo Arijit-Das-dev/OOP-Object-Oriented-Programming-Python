@@ -10,8 +10,12 @@ class BankAccount1:
         self.__acc_num = acc_num # private - This is not accessible 
         self.__password = password # private
         self.balance = balance
-    
 
+B = BankAccount1("Arijit", 1234, "a2#@123", 90000)
+print(B.acc_name)
+print(B.__acc_num) # From this line compiler will throw an error
+print(B.__password) 
+print(B.balance)
 
 # We can access any private attribute value by creating a method
 class BankAccount2:
