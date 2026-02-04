@@ -49,3 +49,6 @@ class ATM:
             print(f"Withdrawn: {amount}")
         else:
             print("Insufficient balance")
+
+atm = ATM(1234, 18000)
+atm.authenticate(237) # wrong pin
