@@ -16,23 +16,28 @@ prevent direct list modification
 class ShoppingCart:
 
     def __init__(self):
-        
+     
         self.__items = [] # private
-    
+ 
     def addItems(self, *items):
 
         # adding items in the list
         self.__items.extend(items)
-    
+
     def removeItems(self, *items):
 
         # removing items from the list
-        self.__items.remove(items)
-    
+        for item in items:
+
+            if item in self.__items:
+
+                self.__items.remove(item)
+
     def showItems(self):
 
-        return self.__items
-    
+        return self.__items.copy()
+
 s = ShoppingCart()
-s.addItems("a", "b" )
+user = input("Enter some value : ")
+s.addItems(user)
 print(s.showItems())
