@@ -15,4 +15,6 @@ class Student:
         self.location = location
 
 s1 = Student("Alex", "B", "B.TECH", "Kolkata")
-print(s1.name, s1.sec, s1.dept, s1.location)
+del s1.name
+del s1.sec
+print(s1.name, s1.sec, s1.dept, s1.location) # Here name and sec property does not exist any more and it will throw an error
