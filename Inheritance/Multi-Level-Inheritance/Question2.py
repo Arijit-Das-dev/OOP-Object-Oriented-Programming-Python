@@ -57,5 +57,6 @@ class AdminUser(AuthenticatedUser):
             print(f"PASSWORD : {passw}")
 
 adm_user = AdminUser("adam", "adam@123#45%45$3")
+print(adm_user.subject)
 adm_user.savedMemory()
 adm_user.showDetails()
