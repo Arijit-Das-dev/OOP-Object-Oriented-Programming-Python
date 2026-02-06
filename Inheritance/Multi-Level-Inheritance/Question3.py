@@ -32,6 +32,7 @@ class Person:
             print(f"Patient name : {self.p_name}")
             print(f"Patient location : {self.p_loc}")
             print("="*50)
+            
         else:
 
             raise ValueError("Adhaar does not matched properly.\n Please enter correct adhaar ID :")
@@ -71,7 +72,6 @@ class InPatient(DiseaseInfo):
         self.room_num = room_num
         self.adm_date = adm_date
 
-
     def showInPatientDetails(self, adhaar):
 
         if adhaar == self._p_adhaar:
@@ -80,11 +80,13 @@ class InPatient(DiseaseInfo):
             print(f"Room number : {self.room_num}")
             print(f"Admission date : {self.adm_date}")
             print("="*50)
+
         else:
 
             raise ValueError("Adhaar does not matched properly.\n Please enter correct adhaar ID :")
     
 InP = InPatient(1, "Alex", "London", 1234567, "Dengue", "Viral", "Mild", "2026-01-15", "Active", 200, "2026-01-15")
+print(InP.subject)
 InP.showPersonDetails(1234567)
 InP.showDiseaseDetails(1234567)
 InP.showInPatientDetails(1234567)
