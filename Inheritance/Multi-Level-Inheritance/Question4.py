@@ -13,8 +13,11 @@ class User:
 
         with open("details.txt", "a") as f:
         
-            list_of_details = f"{self.name}, {self.dob}, {self._email}, {self.__confirm_password}"
+            list_of_details = f"{self.name}, \n{self.dob}, \n{self._email}, \n{self.__confirm_password}\n\n\n"
 
             f.write(list_of_details)
 
         return "Details saved successfully"
+
+u = User("Alex", "alex123@gmail.com", "alex@12#23", "alex@12#23", "2004-12-6")
+print(u.save_details())
