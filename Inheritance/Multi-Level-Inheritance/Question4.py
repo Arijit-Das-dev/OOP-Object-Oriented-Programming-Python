@@ -1,3 +1,5 @@
+import hashlib
+
 class User:
 
     def __init__(self, name, email, password, confirm_password, dob):
@@ -10,4 +12,10 @@ class User:
 
     def save_details(self):
 
+        with open("details.txt", "w") as f:
         
+            list_of_details = f"{self.name}, {self.dob}, {self._email}, {self.__confirm_password}"
+
+            f.write(list_of_details)
+
+        return "Details saved successfully"
