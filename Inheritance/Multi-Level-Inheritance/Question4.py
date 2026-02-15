@@ -8,6 +8,6 @@ class User:
         self.__confirm_password = confirm_password
         self.dob = dob
 
-    def display_details(self):
+    def save_details(self):
 
-        pass
+        
