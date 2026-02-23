@@ -53,7 +53,7 @@ class Person:
         print(f"Your phone : {self.phone}")
         print(f"Your address : {self.address}")
 
-        
 p = Person(1, "Arijit", 21, "M", 6289449233, "Dum Dum")
 print(p.SUBJECT)
 p.update_profile("My Details", "Arijit Das", 22, "Male", 9147055924, "Kolkata")
+p.get_details()
