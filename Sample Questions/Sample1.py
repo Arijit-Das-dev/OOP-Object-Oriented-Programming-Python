@@ -1,3 +1,6 @@
+""" HOSPITAL MANAGEMENT SYSTEM """
+
+
 import os
 
 class Person:
@@ -64,11 +67,26 @@ class Doctor(Person):
         self.specialization = specialization
         self.experience = experience
         self.fee = fee
+        self.medical_history = []
 
     def add_patient(self):
 
         super().get_details()
         print("Patient Added")
+
+    def view_medical_history(self,  date, doctor, diagnosis, prescription, notes):
+
+        record = {
+
+            "date":date,
+            "doctor":doctor,
+            "diagnosis": diagnosis,
+            "prescription":prescription,
+            "notes":notes
+        }
+
+        self.medical_history.append(record)
+        
 p = Person(1, "Arijit", 21, "M", 6289449233, "Dum Dum")
 print(p.SUBJECT)
 p.update_profile("My Details", "Arijit Das", 22, "Male", 9147055924, "Kolkata")
