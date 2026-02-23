@@ -65,7 +65,10 @@ class Doctor(Person):
         self.experience = experience
         self.fee = fee
 
-        
+    def add_patient(self):
+
+        super().get_details()
+        print("Patient Added")
 p = Person(1, "Arijit", 21, "M", 6289449233, "Dum Dum")
 print(p.SUBJECT)
 p.update_profile("My Details", "Arijit Das", 22, "Male", 9147055924, "Kolkata")
