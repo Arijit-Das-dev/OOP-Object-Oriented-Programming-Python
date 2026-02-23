@@ -2,7 +2,7 @@ import os
 
 class Person:
 
-    SUBJECT = "Person class"
+    SUBJECT = "Class : Doctor"
 
     def __init__(self, person_id, name, age, gender, phone, address):
 
@@ -53,6 +53,19 @@ class Person:
         print(f"Your phone : {self.phone}")
         print(f"Your address : {self.address}")
 
+class Doctor(Person):
+
+    SUBJECT = "Class : Doctor"
+
+    def __init__(self, person_id, name, age, gender, phone, address, doctor_id, specialization, experience, fee):
+        super().__init__(person_id, name, age, gender, phone, address)
+
+        self.doctor_id = doctor_id
+        self.specialization = specialization
+        self.experience = experience
+        self.fee = fee
+
+        
 p = Person(1, "Arijit", 21, "M", 6289449233, "Dum Dum")
 print(p.SUBJECT)
 p.update_profile("My Details", "Arijit Das", 22, "Male", 9147055924, "Kolkata")
