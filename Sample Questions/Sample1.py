@@ -74,7 +74,7 @@ class Doctor(Person):
         super().get_details()
         print("Patient Added")
 
-    def view_medical_history(self,  date, doctor, diagnosis, prescription, notes):
+    def _medical_history(self,  date, doctor, diagnosis, prescription, notes):
 
         record = {
 
@@ -86,8 +86,13 @@ class Doctor(Person):
         }
 
         self.medical_history.append(record)
-        
-p = Person(1, "Arijit", 21, "M", 6289449233, "Dum Dum")
-print(p.SUBJECT)
-p.update_profile("My Details", "Arijit Das", 22, "Male", 9147055924, "Kolkata")
-p.get_details()
+
+    def show_medical_history(self):
+
+       for record in self.medical_history:
+           print(record)
+
+d = Doctor(1, "Arijit", 23, "Male", 6289449233, "Dum Dum", "A1", "Aurthop", 10, 12000)
+d.add_patient()
+d._medical_history("12-2-2004","A.K Bose", "x", "xyz", "Available")
+d.show_medical_history()
