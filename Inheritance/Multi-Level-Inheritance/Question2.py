@@ -12,7 +12,6 @@ Parent validates username
 Middle class validates password
 
 Child validates admin privileges
-
 """
 
 class User:
