@@ -16,7 +16,6 @@ Attributes are two types =>
 All the objects attributes will be different
 All the class attributes will be same
 """
-
 class College:
 
     college_name = "XYZ" # Class attribute
