@@ -34,7 +34,6 @@ class Person:
             print("="*50)
             
         else:
-
             raise ValueError("Adhaar does not matched properly.\n Please enter correct adhaar ID :")
 
 class DiseaseInfo(Person):
